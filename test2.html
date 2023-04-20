@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header, #main, #mid, #footer {
+            text-align: center;
+            margin: 50px;
+        }
+        #header {
+            background-color: greenyellow;
+            border: 5px solid gray
+        }
+        #main, #mid, #footer{
+            border: 5px dotted black;
+            border-radius: 50px;
+            background-color: white;
+        }
+        #order {
+            text-align: center;
+        }
+        body {
+            background-color: palegreen;
+        }
+        .order, .q {
+            text-align: left;
+            padding-left: 30px;
+        }
+        button {
+            font-size: 25px;
+            border: 1px solid black;
+            margin-left: 30px;
+            padding: 10px;
+        }
+        fieldset {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>주문 페이지</h1>
+        <p>음식 주문을 위한 페이지 입니다. 정확한 내용을 기재 바랍니다.</p>
+    </div>
+    <form action="">
+        <fieldset>
+            <div id="main">
+                <h1>내가 좋아하는 충만 치킨 매뉴 선택</h1>
+                <p>사진을 누르면 선택됨</p>
+                <label for="chicken"><img src="http://www.bhc.co.kr/upload/bhc/menu/ck20150130_470_v.jpg" width="200px">치킨<input type="radio" id="chicken" name="menu"></label>
+                <label for="pizza"><img src="https://www.7thpizza.com/files/MENU/3F6493546AEC446B980E975410DFB1EB.jpg" width="200px">피자<input type="radio" id="pizza" name="menu"></label>
+                <label for="tteokbokki"><img src="https://www.yupdduk.com/images/menu/2020_hotmenuY01.png" width="200px">떡볶이<input type="radio" id="tteokbokki" name="menu"></label>
+                <hr>
+                <h3>사이드 메뉴</h3>
+                <label for="">치즈볼<input type="checkbox"></label>
+                <label for="">치킨무<input type="checkbox"></label>
+                <label for="">머스타드 소스<input type="checkbox"></label>
+                <label for="">칠리 소스<input type="checkbox"></label>
+                <label for="">콜라<input type="checkbox"></label>
+                <h3>선택사항</h3>
+                <label for="">나무젓가락 제외<input type="checkbox"></label>
+                <label for="">치킨 무 제외<input type="checkbox"></label>
+                <label for="">소스 제외<input type="checkbox"></label>
+                <br>
+                <label for="">맵기(1~5)<input type="range" value="1" min="1" max="5"></label>
+            </div>
+            <div id="mid">
+                <h1>주문 정보</h1>
+                <p>주문자의 정보</p>
+                <div class="order">
+                    <label for="">주문자 성명<input type="text" placeholder="홍길동"></label>
+                    <br><br>
+                    <label for="">전화번호<input type="text" placeholder="010-1234-5678"></label>
+                    <br><br>
+                    <label for="">주소<input type="text" placeholder="oo시 oo구 oo동"></label>
+                    <br><br>
+                    <label for="">쿠폰번호<input type="text" placeholder="ABCD-EFGH-IGK"></label>
+                    <br><br>
+                    <label for="">도착날짜<input type="date"></label>
+                    <br><br>
+                    <h4>주문방법</h4>
+                    <label for="">카드<input type="radio" name="pay"></label>
+                    <label for="">쿠폰<input type="radio" name="pay"></label>
+                    <label for="">현금<input type="radio" name="pay"></label>
+                    <h4>카드사</h4>
+                    <label for="">현대<input type="radio" name="card"></label>
+                    <label for="">국민<input type="radio" name="card"></label>
+                    <label for="">카카오<input type="radio" name="card"></label>
+                    <br><br>
+                    <label for="">카드번호<input type="text" placeholder="XXXX-XXXX-XXXX"></label>
+                </div>
+            </div>
+            <div id="footer">
+                <h1>개인정보 수집 및 이용 동의</h1>
+                <div class="q">
+                    <p>주문 정보를 저장하기 위해 회원의 개인정보를 수집하고 있으며, 수집에 동희하지 않으면 주문 불가</p>
+                    <label for="">동의<input type="radio" name="info"></label>
+                    <label for="">거절<input type="radio" name="info"></label>
+                </div>
+                <hr>
+                <h1>이벤트 문자 및 알림 수신</h1>
+                <div class="q">
+                    <p>이벤트 및 각종 혜택 정보 제공을 위한 문자 전송을 수신합니다.</p>
+                    <label for="">동의<input type="radio" name="message"></label>
+                    <label for="">거절<input type="radio" name="message"></label>
+                </div>
+            </div>
+            <div id="order">
+                <button type="submit">주문</button>
+                <button type="reset">주문 취소</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

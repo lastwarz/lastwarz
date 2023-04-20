@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            border: 3px solid red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>제목</legend>
+            <!-- inputType : text, password, checkbox, radio, range, date, file -->
+
+            <!-- autofocus 새로고침시 입력 -->
+            <!-- required : 필수 작성요소 -->
+            <!-- placeholder : input 태그 안에 설명 등 작성 -->
+            <label for="">id<input type="text" autofocus required placeholder="id"></label>
+            <label for="">password<input type="password" required placeholder="password"></label>
+            <br><br>
+            <label for="">checkbox<input type="checkbox"></label>
+            <label for="">checkbox<input type="checkbox"></label>
+            <label for="">checkbox<input type="checkbox"></label>
+            <br><br>
+            <label for="">radio<input type="radio" name="radio"></label>
+            <label for="">radio<input type="radio" name="radio"></label>
+            <label for="">radio<input type="radio" name="radio"></label>
+            <br><br>
+            <label for="link">라벨</label>
+            <input type="text" id="link">
+            <br><br>
+            <button type="button">button</button>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+            <br><br>
+
+            <!-- range : min, max, step, value -->
+            <label for="">slide <input type="range" min="1" max="10" step="1" value="1"></label>
+
+            <br><br>
+
+            <label for="">date <input type="date"></label>
+
+            <br><br>
+
+            <label for="">file<input type="file"></label>
+
+            <br><br>
+            <select name="" id="">
+                <option value="">cho1</option>
+                <option value="">cho2</option>
+                <option value="">cho3</option>
+            </select>
+            <br><br>
+            <textarea name="" id="" cols="100" rows="10" placeholder="placeholder"></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>
